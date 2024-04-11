@@ -1,0 +1,432 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
+
+/* GENERAL----------------------------------------------------------- */
+
+main {
+    margin: 0 70px;
+    background-color: white;
+}
+
+body:not(main) {
+    background-color: #eee;
+}
+
+body {
+    font-family: 'Open Sans';
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'Raleway';
+    font-size: 36px;
+}
+
+h2{
+    font-family: 'Raleway';
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    
+}
+
+h3{
+    font-family: 'Raleway';
+    font-size: 18px;
+}
+
+/* HEADER------------------------------------------------------------ */
+
+.acces, .acces div {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e2f7ff;
+}
+.acces p, .acces button {
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #0c6588;
+    border: none;
+    background-color: #e2f7ff;
+    font-family: 'Open Sans';
+    font-weight:600;
+
+}
+
+.acces p {
+    color: black;
+}
+header {
+    background-image: url(FRONT/images/header.jpg);
+}
+
+.logo {
+    padding: 20px;
+    color: white;
+}
+
+.logo, .logo ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.logo:first-of-type:not(img), .logo pre {
+    margin-right: 20px;
+}
+
+.logo ul li {
+    width: 110px;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+}
+
+.logo ul li a {
+    width: 500px;
+    color: #e2f7ff;
+    text-decoration: none;
+    margin: 0;
+}
+
+.logo ul li:first-child:before{
+    display: block;
+    text-align: center;
+    font-family: 'Font Awesome 5 Free';
+    font: var(--fa-font-solid);
+    content: '\f007';
+    color: white;
+}
+
+.logo ul li:last-child:before{
+    display: block;
+    text-align: center;
+    font-family: 'Font Awesome 5 Free';
+    font: var(--fa-font-solid);
+    content: '\f07a';
+    color: white;
+}
+
+.logo img {
+    width: 5%;
+    height: 5%;
+}
+
+.logo input {
+    max-width: 500px;
+    width: 500px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: #9fdaf2;
+}
+
+.d-flex ::placeholder {
+    position: relative;
+    left: 20%;
+}
+
+.logo button {
+    width: 70px;
+    height: 50px;
+}
+
+
+/* NAVIGATION------------------------------------------------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav{
+    margin: 0 70px;
+    background-color: #e2f7ff;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul li:hover {
+    background-color: #eee;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a::after {
+    color: white;
+}
+
+nav a:hover{
+    color: black;
+    text-align: center;
+    border-bottom: 2px solid #0c6588;
+}
+
+.sous-famille-produit{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav > ul li:hover .sous-famille-produit{
+    width: 200%;
+    display:block;
+}
+
+
+.sous-famille-produit li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous-famille-produit a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous-famille-produit a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.famille-produit > a:after{
+    /* content:" ▼"; */
+    color: white;
+    font-size: 12px;
+}
+
+.famille-produit > a{
+    color: #0c6588;
+}
+
+article{
+    margin: 50px 50px;
+}
+
+#ordinateur a:before{
+    font-family: "Font Awesome 5 Free";
+    font: var(--fa-font-solid);
+    content: "\f390";
+    color: #0c6588;
+    margin-right: 5px;
+}
+
+#peripheriquesEtComposants a:before {
+    font-family: 'Font Awesome 5 Free';
+    font: var(--fa-font-solid);
+    content: "\f1c0";
+    color: #0c6588;
+    margin-right: 5px;
+}
+
+#telephone a:before{
+    font-family: 'Font Awesome 5 Free';
+    font: var(--fa-font-solid);
+    content: "\f3cd";
+    color: #0c6588;
+    margin-right: 5px;
+}
+
+#objetsConnectes a:before{
+    font-family: 'Font Awesome 5 Free';
+    font: var(--fa-font-solid);
+    content: "\f5c3";
+    color: #0c6588;
+    margin-right: 5px;
+}
+
+
+/*SLIDE*************************************************************** */
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider img, .slider li, .sy-box {
+    width: 100%;
+}
+
+/* PRESENTATION----------------------------------------------------- */
+
+.presentation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    padding: 20px;
+    }
+
+.presentation button {
+    background-color: #0c6588;
+    color: white;
+    border: #0c6588;
+    border-radius: 0 ;
+    width: 8rem;
+    height: 2rem;
+    font-size: 15px;
+    }
+
+.presentation p:nth-child(5) {
+    color: #0c6588;
+}
+
+.chemin-famille {
+    margin: 0 0 30px 10px;
+    color: #0c6588;
+    padding: 10px 0 0 0;
+}
+
+.chemin-famille a:after{
+    font-family: 'Font Awesome 5 Free';
+    font:var(--fa-font-solid);
+    content: '\f054';
+    color: #0c6588;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.chemin-famille a{
+    margin-right: 10px;
+    color: #0c6588;
+}
+
+main h1{
+    margin: 30px 0 30px 10px;
+}
+
+.chemin-sous-famille {
+    margin: 20px 0px 30px 10px;
+}
+
+.chemin-sous-famille a{
+    margin-right: 40px;
+    color: #0c6588;
+}
+
+/* DESCRIPTIF-------------------------------------------------------------- */
+.descriptif div{
+    margin: 40px 20px;
+}
+.performance {
+    max-height: 500px;
+    height: 500px;
+}
+
+.performance p {
+    float: left;
+
+}
+.performance img {
+    width: 50%;
+    border: 3px solid rgba(160, 160, 160, 0.426);
+    float: right;
+}
+
+.design p {
+    float:inherit;
+    max-width: 900px;
+    max-height: 120px;
+}
+
+.design img {
+    width: 50%;
+    float: left;
+}
+
+.confort {
+    height: 500px;
+}
+
+.confort img {
+    width: 50%;
+    float: right;
+}
+
+
+/* CARACTERISTIQUE-TECHNIQUES--------------------------------------- */
+
+table {
+    width: 70%;
+}
+
+.Caractériqtiques-1, 
+.Caractériqtiques-2, 
+.Caractériqtiques-3,
+.Caractériqtiques-4,
+.Caractériqtiques-5,
+.Caractériqtiques-6, 
+.Caractériqtiques-7 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.affichage, 
+.ecran,
+.ergonomie, 
+.connectique,
+.multimedia, 
+.physiques, 
+.alimentation
+ {
+    border: 1px solid rgb(177, 175, 175);
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.physiques {
+    position: relative;
+    left: -8px;
+}
+.alimentation {
+    position: relative;
+    left: -6px;
+}
+
+td {
+    width: 50%;
+    border-bottom: 1px solid rgb(177, 175, 175);
+    padding: 5px;
+}
+
+.Caractériqtiques-2 p {
+    padding: 0 11px 0 11px;
+}
+
+.Caractériqtiques-6 p {
+    text-align: center;
+}

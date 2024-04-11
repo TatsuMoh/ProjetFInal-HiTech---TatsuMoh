@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-product.css">
+</head>
+
+<body>
+    <header>
+        <div class="gauche">
+            <img src="../FRONT/images/logo.svg" alt="logo">
+            <h1>HiTech.NET</h1>
+            <p>Produit:(NOUVEAU)</p>
+        </div>
+
+        <div class="droite">
+            <img src="../BACK/avatar.png" alt="avatar">
+            <div class="dropdown" style="float:left;">
+                <button class="dropbtn">v</button>
+                <div class="dropdown-content" style="left:0;">
+                <a href="#">Mon compte</a>
+                <a href="#">Déconnexion</a>
+                </div>
+              </div>
+        </div>
+    </header>
+
+    <main>
+        <aside class="Accueil">
+            <h1>Accueil</h1>
+            <a href="">Tableau de bord</a>
+
+            <h1>Site web</h1>
+            <a href="">Gestion des rubriques</a><br>
+            <a href="">Gestion des actualités</a>
+
+            <h1 class="btq">Boutique</h1>
+            <a href="">Gestion des rayons</a><br>
+            <a href="">Gestion des produits</a><br>
+            <a href="">Gestion des commandes</a>
+
+            <h1 class="para">Paramètres</h1>
+            <a href="">Gestion des utilisateurs</a><br>
+            <a href="">Gestion des rôles</a><br>
+            <a href="">préférences</a>
+        </aside>
+
+        <section class="Gestion">
+            <div class="cancelSubmit">
+                <button> Annuler les modifications</button>
+                <button>Valider et enregistrer la fiche</button>
+            </div>
+
+            <form action="">
+                <fieldset>
+                    <legend>Gestion</legend>
+
+
+                    <div class="gest1">
+                        <div class="gestion-select">
+                            <label for="statut">Statut</label>
+                        </div>
+
+                        <div class="answer">
+                            <div class="rad">
+                                <input type="radio" name="reponse" id="enAttente">
+                                <label for="">En attente de mise en ligne</label>
+                            </div>
+                            <div class="rad">
+                                <input type="radio" name="reponse" id="enBoutique">
+                                <label for="">En boutique</label>
+                            </div>
+                            <div class="rad">
+                                <input type="radio" name="reponse" id="enLigne">
+                                <label for="">Retiré</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gest2">
+                        <div class="gestion-select">
+                            <label for="boutique">Boutique</label>
+                        </div>
+
+                        <div class="answer">
+                            <select name="Boutique" id="boutiqueSelect">
+                                <option value="Boutique">Choisir une boutique...</option>
+                                <option value="Gennevilliers">Gennevilliers</option>
+                                <option value="Rueil">Rueil Malmaison</option>
+                                <option value="Argenteuil">Argenteuil</option>
+                                <option value="Asnières">Asnières Sur Seine</option>
+                                <option value="Paris">Paris</option>
+                                <option value="SaintDenis">Saint Denis</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="gest3">
+                        <div class="gestion-select">
+                            <label for="Rayon">Rayon</label>
+                        </div>
+
+                        <div class="answer">
+                            <select name="Rayon" id="rayonSelect">
+                                <option value="rayon">Choisir un rayon...</option>
+                                <option value="ordinateurs">Ordinateurs</option>
+                                <option value="peripherique">Périphérique et composants</option>
+                                <option value="telephone">Téléphone</option>
+                                <option value="objets">Objets connectés</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            
+            <form action="Présentation">
+                <fieldset>
+                    <legend>Présentation</legend>
+                    
+                    <div class="container">
+                        <div class="presentation-select">
+                            <label for="Marque">Marque</label>
+                        </div>
+                        
+                        <div class="answer">
+                            <input type="text" name="marque" id="marque" required minlength="4" maxlength="10" size="15">
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="presentation-select">
+                            <label for="ref produit"> Référence produit</label>
+                        </div>
+                            
+                        <div class="answer">
+                            <input type="text" name="produit" id="produit" required minlength="4" maxlength="10" size="15">
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="presentation-select">
+                            <label for="etiquette">Etiquettes</label>
+                        </div>
+                            
+                        <div class="answer">
+                            <input type="text" name="etiquette" id="etiquette" required minlength="4" maxlength="10" size="15">
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div>
+                            <label for="prix">Prix</label>
+                        </div>
+
+                        <div class="answerplus">
+                            <p>Prix</p>
+                            <input type="text" name="Prix" id="price">
+                            <p>€</p>
+                            <p>éco-participation</p>
+                            <input type="text" name="éco-participation" id="ecoParticipation">
+                            <p>€</p>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div>
+                            <label for="Description">Description principale (MarkDown)</label>
+                        </div>
+
+                        <div>
+                            <input type="text" name="description" id="descriptionPrincipale">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <form action=" Photos">
+                <fieldset>
+                    <div>
+                        <legend>Photos</legend>
+                            <div class="ph">
+                                <label for="Photo1">Photo 1</label>
+                                <input type="file" name="Choisir un fichier" id="fichierPhoto1">
+                            </div>
+
+                            <div class="ph">
+                                <label for="Photo2">Photo 2</label>
+                                <input type="file" name="Choisir un ficier" id="fichierPhoto2">
+                            </div>
+
+                            <div class="ph">
+                                <label for="Photo3">Photo 3</label>
+                                <input type="file" name="choisir un fichier" id="fichierPhoto3">
+                            </div>
+
+                            <div class="ph">
+                                <label for="Photo 4">Photo 4</label>
+                                <input type="file" name="Choisir un fichier" id="fichierPhoto4">
+                            </div>
+
+                            <div class="ph">
+                                <label for="Photo 5">Photo 5</label>
+                                <input type="file" name="Choisir un fichier" id="fichierPhoto5">
+                            </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <form action="">
+                <fieldset>
+                    <legend>Descriptif 1</legend>
+
+                    <div>
+                        <label for="Titre">Titre</label>
+                        <input type="text" name="" id="titredescriptif2">
+                    </div>
+
+                    <div class="image">
+                        <label for="">Image</label>
+                        <input type="file" name="Choisir un fichier" id="imageDecriptif2">
+                    </div>
+
+                    <div class="texte">
+                        <label for="texte">Texte</label>
+                        <input type="text" name="" id="texteDescriptif1" required minlength="4" maxlength="10" size="70">
+                    </div>
+                </fieldset>
+            </form>
+
+            <form action="">
+                <fieldset>
+                    <legend>Descriptif 2</legend>
+
+                    <div>
+                        <label for="Titre">Titre</label>
+                        <input type="text" name="" id="titredescriptif2">
+                    </div>
+
+                    <div class="image">
+                        <label for="">Image</label>
+                        <input type="file" name="Choisir un fichier" id="imageDecriptif2">
+                    </div>
+
+                    <div class="texte">
+                        <label for="texte">Texte</label>
+                        <input type="text" name="" id="texteDescriptif2">
+                    </div>
+                </fieldset>
+            </form>
+
+            <form action="">
+                <fieldset>
+                    <legend>Descriptif 3</legend>
+
+                    <div>
+                        <label for="Titre">Titre</label>
+                        <input type="text" name="" id="titredescriptif3">
+                    </div>
+
+                    <div class="image">
+                        <label for="">Image</label>
+                        <input type="file" name="Choisir un fichier" id="imageDecriptif3">
+                    </div>
+
+                    <div class="texte">
+                        <label for="texte">Texte</label>
+                        <input type="text" name="" id="texteDescriptif3">
+                    </div>
+                </fieldset>
+            </form>
+
+        </section>
+    </main>
+
+    
+</body>
+</html>
